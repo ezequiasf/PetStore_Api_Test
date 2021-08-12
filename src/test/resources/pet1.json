@@ -1,0 +1,18 @@
+{
+  "id": 0,
+  "category": {
+    "id": 1,
+    "name": "dog"
+  },
+  "name": "Feijão",
+  "photoUrls": [
+    "string"
+  ],
+  "tags": [
+    {
+      "id": 2021,
+      "name": "vacinado"
+    }
+  ],
+  "status": "available"
+}
