@@ -7,6 +7,7 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 
 import static io.restassured.RestAssured.given;
+import static org.hamcrest.CoreMatchers.is;
 
 public class Pet {
 
@@ -21,6 +22,10 @@ public class Pet {
         String jsonBody = readJson("src/test/resources/pet1.json");
 
         given().contentType("application/json").log().all().body(jsonBody)
-                .when().post(uri).then().log().all().statusCode(200);
+                .when().post(uri).then().log().all().statusCode(200)
+                .body("name", is("Charlote"))
+                .body("status", is("available"));
     }
+
+
 }
