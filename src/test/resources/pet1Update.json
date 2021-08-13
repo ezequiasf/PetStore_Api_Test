@@ -1,0 +1,18 @@
+{
+  "id": 3212345612,
+  "category": {
+    "id": 1,
+    "name": "dog"
+  },
+  "name": "Charlote",
+  "photoUrls": [
+    "string"
+  ],
+  "tags": [
+    {
+      "id": 2021,
+      "name": "vacinado"
+    }
+  ],
+  "status": "solded"
+}
